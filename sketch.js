@@ -1,20 +1,28 @@
 
-let path1
-let path2
-let path3
-let path4
-let path5
-let path6
+let frame1
+let frame2
+let frame3
+let frame4
+let frame5
+let frame6
+let frame7
+let frame8
+let frame9
+let frame10
 let timer = 0
 let increment = 1
 
 function preload(){
-  path1 = loadImage("paths1.png") 
-  path2 = loadImage("paths2.png") 
-  path3 = loadImage("paths3.png") 
-  path4 = loadImage("paths4.png") 
-  path5 = loadImage("paths5.png") 
-  path6 = loadImage("paths6.png") 
+  frame1 = loadImage("frame1.png") 
+  frame2 = loadImage("frame2.png") 
+  frame3 = loadImage("frame3.png") 
+  frame4 = loadImage("frame4.png") 
+  frame5 = loadImage("frame5.png") 
+  frame6 = loadImage("frame6.png") 
+  frame7 = loadImage("frame7.png") 
+  frame8 = loadImage("frame8.png") 
+  frame9 = loadImage("frame9.png") 
+  frame10 = loadImage("frame10.png") 
 
 }
   
@@ -30,29 +38,42 @@ function draw() {
 
   timer = timer + increment
 
-  image(path1, 0,0, path1.width, path1.height)
+  image(frame1, 0,0, frame1.width, frame1.height)
 
   
 
-if (timer >= 200){
-    image(path2, 0, 0, path2.width, path2.height)}
+  if (timer >= 200){
+    image(frame2, 0, 0, frame2.width, frame2.height)}
 
   if (timer >= 400){
-    image(path3, 0, 0, path3.width, path3.height)}
+    image(frame3, 0, 0, frame3.width, frame3.height)}
 
   if (timer >= 600){
-    image(path4, 0, 0, path4.width, path4.height)}
+    image(frame4, 0, 0, frame4.width, frame4.height)}
       
   if (timer >= 800){
-   image(path5, 0, 0, path5.width, path5.height)}
+   image(frame5, 0, 0, frame5.width, frame5.height)}
 
   if (timer >= 1000){
-   image(path6, 0, 0, path6.width, path6.height)}
+   image(frame6, 0, 0, frame6.width, frame6.height)}
 
+  if (timer >= 1200){
+    image(frame7, 0, 0, frame7.width, frame7.height)}
 
-   if (timer === 1200){
+  if (timer >= 1400){
+    image(frame8, 0, 0, frame8.width, frame8.height)}
+
+  if (timer >= 1600){
+    image(frame9, 0, 0, frame9.width, frame9.height)}
+        
+  if (timer >= 1800){
+    image(frame10, 0, 0, frame10.width, frame10.height)}
+
+   if (timer === 2000){
     timer = 0
    }
+
+
 }
     
   
